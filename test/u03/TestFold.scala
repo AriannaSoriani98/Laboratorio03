@@ -13,7 +13,7 @@ class TestFold {
 
   val lst: List[Int] = cons (3, cons (7, cons (1, cons (5, empty()))))
 
-  @Test def testfoldLeftandRight(): Unit ={
+  @Test def testFoldLeftAndRight(): Unit ={
     assertEquals(-16,foldLeft (lst)(0)(_-_))
     assertEquals(-8,foldRight (lst)(0)(_-_))
   }

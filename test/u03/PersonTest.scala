@@ -13,10 +13,12 @@ class PersonTest {
   val teacher1: Person = Teacher("Mirko", "pps")
   val teacher2: Person = Teacher("Alessandro", "pcd")
 
-  val listOfPersons: List[Person] = cons(student1, cons(teacher2, cons(student2, empty())))
+  val listOfPersons1: List[Person] = cons(student1, cons(teacher2, cons(student2, empty())))
+  val listOfPersons2: List[Person] = cons(student1, cons(teacher1, cons(student2, empty())))
 
   @Test def testgetCourses(): Unit ={
-    assertEquals(cons("pcd",empty()),getCourses(listOfPersons))
+    assertEquals(cons("pcd",empty()),getCourses(listOfPersons1))
+    assertEquals(cons("pps",empty()),getCourses(listOfPersons2))
 
   }
 
