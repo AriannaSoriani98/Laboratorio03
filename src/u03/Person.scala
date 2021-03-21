@@ -14,7 +14,7 @@ object Person {
   var student1: Person = Student("Arianna", 22)
   var student2: Person = Student("Luca", 22)
   var teacher1: Person = Teacher("Mirko", "pps")
-  var teacher2: Person = Teacher("Alessandro", "pcd")
+  var teacher2: Person = Teacher("Roberto", "pcd")
 
   def empty[A](): List[A] = Nil()
 
